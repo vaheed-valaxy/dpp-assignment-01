@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: YOUR_USERNAME/banking-frontend:v1
+          image: vaheeddockerhub/banking-frontend:v1
           ports:
             - containerPort: 3000
           envFrom:
