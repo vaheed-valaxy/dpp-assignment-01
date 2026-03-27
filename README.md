@@ -2,24 +2,13 @@
 
 A multi-tier banking application deployed on Kubernetes (Minikube).
 
-## Tech Stack
-- **Frontend**: Node.js (Express + EJS) - Port 3000
-- **Backend**: Java 17 + Spring Boot 3 + Spring Data JPA - Port 8080
-- **Database**: PostgreSQL 15 - Port 5432
-- **Orchestration**: Kubernetes (Minikube)
-
 ## 🧰 Tech Stack
 
-<div align="center">
-  
 | Layer            | Technology 🚀                                 | Description 📄                             | Port 🔌 |
 | ---------------- | --------------------------------------------- | ------------------------------------------ | ------- |
 | 🎨 Frontend      | **Node.js (Express + EJS)**                   | Server-side rendered UI with dynamic views | `3000`  |
 | ⚙️ Backend       | **Java 17 + Spring Boot 3 + Spring Data JPA** | REST API & business logic layer            | `8080`  |
 | 🗄️ Database     | **PostgreSQL 15**                             | Relational database for persistent storage | `5432`  |
-
-
-</div>
 
 ## Architecture
 ```
