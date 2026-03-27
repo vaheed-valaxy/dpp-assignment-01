@@ -16,7 +16,6 @@ Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → Postgre
 ```
 
 ## 🏗️ Architecture Diagram
-
 ![Architecture](./images/architecture.png)
 
 ## 🌈 Architecture Diagram
