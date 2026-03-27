@@ -14,6 +14,10 @@ A multi-tier banking application deployed on Kubernetes (Minikube).
 ```
 Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → PostgreSQL (ClusterIP :5432)
 ```
+
+## 🏗️ Architecture Diagram
+
+![Architecture](./images/architecture.png)
 ## 🌈 Architecture Diagram
 ---
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cefecbe1-2398-45f6-a5f7-eed01f789a49" />
