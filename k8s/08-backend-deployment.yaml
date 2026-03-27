@@ -17,7 +17,8 @@ spec:
     spec:
       containers:
         - name: backend
-          image: vaheeddockerhub/banking-backend:v1
+          image: YOUR_USER/banking-backend:v1
+          imagePullPolicy: Always
           ports:
             - containerPort: 8080
           envFrom:
