@@ -45,19 +45,28 @@ Replace `YOUR_USERNAME` in these files with your Docker Hub username:
 
 ### 4. Deploy to Kubernetes
 ```bash
+# Create namespace
 kubectl apply -f k8s/namespace.yaml
-kubectl apply -f k8s/postgres-secret.yaml
-kubectl apply -f k8s/backend-configmap.yaml
-kubectl apply -f k8s/frontend-configmap.yaml
+
+# Create Database related kubernetes resources
 kubectl apply -f k8s/postgres-pvc.yaml
-kubectl apply -f k8s/postgres-deployment.yaml
+kubectl apply -f k8s/postgres-secret.yaml
 kubectl apply -f k8s/postgres-service.yaml
+kubectl apply -f k8s/postgres-deployment.yaml
 kubectl wait --for=condition=ready pod -l app=postgres -n banking-app --timeout=120s
+
+# Create backend related kubernetes resources
+kubectl apply -f k8s/backend-configmap.yaml
 kubectl apply -f k8s/backend-deployment.yaml
 kubectl apply -f k8s/backend-service.yaml
 kubectl wait --for=condition=ready pod -l app=backend -n banking-app --timeout=180s
-kubectl apply -f k8s/frontend-deployment.yaml
+
+# Create frontend related kubernetes resources
+kubectl apply -f k8s/frontend-configmap.yaml
 kubectl apply -f k8s/frontend-service.yaml
+kubectl apply -f k8s/frontend-deployment.yaml
+kubectl wait --for=condition=ready pod -l app=backend -n banking-app --timeout=180s
+
 ```
 
 ### 5. Access the Application
