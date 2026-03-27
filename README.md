@@ -14,10 +14,9 @@ Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → Postgre
 ```
 
 ## Prerequisites
-- Docker Desktop
-- Minikube
+- Kubernetes Cluster
 - kubectl
-- Docker Hub account
+- Docker Hub Account
 
 ## Quick Start
 
