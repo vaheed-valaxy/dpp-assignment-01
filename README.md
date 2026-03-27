@@ -54,19 +54,22 @@ flowchart LR
 
 ```mermaid
 flowchart LR
-    A["🌐 Browser"]
-    B["🎨 Frontend\n(NodePort :30080)"]
-    C["⚙️ Backend\n(ClusterIP :8080)"]
-    D["🗄️ PostgreSQL\n(ClusterIP :5432)"]
+    Browser["🌐 Browser"]
+    Frontend["🎨 Frontend (NodePort :30080)"]
+    Backend["⚙️ Backend (ClusterIP :8080)"]
+    DB["🗄️ PostgreSQL (ClusterIP :5432)"]
 
-    A --> B --> C --> D
+    Browser --> Frontend --> Backend --> DB
 
-    %% Simple soft colors
-    style A fill:#f9f9f9,stroke:#555
-    style B fill:#e3f2fd,stroke:#1e88e5
-    style C fill:#e8f5e9,stroke:#43a047
-    style D fill:#fff3e0,stroke:#fb8c00
+    %% Clean styling
+    style Browser fill:#f5f5f5,stroke:#444
+    style Frontend fill:#e3f2fd,stroke:#1e88e5
+    style Backend fill:#e8f5e9,stroke:#43a047
+    style DB fill:#fff3e0,stroke:#fb8c00
 ```
+
+---
+
 
 ---
 
