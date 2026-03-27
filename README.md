@@ -67,32 +67,34 @@ Replace `YOUR_USERNAME` in these files with your Docker Hub username:
 ### 4. Deploy to Kubernetes
 ```bash
 # Create namespace
-kubectl apply -f k8s/namespace.yaml
+kubectl apply -f k8s/01-namespace.yaml
 
 # Create Database related kubernetes resources
-kubectl apply -f k8s/postgres-pvc.yaml
-kubectl apply -f k8s/postgres-secret.yaml
-kubectl apply -f k8s/postgres-service.yaml
-kubectl apply -f k8s/postgres-deployment.yaml
+kubectl apply -f k8s/02-postgres-pvc.yaml
+kubectl apply -f k8s/03-postgres-secret.yaml
+kubectl apply -f k8s/04-postgres-service.yaml
+kubectl apply -f k8s/05-postgres-deployment.yaml
 kubectl wait --for=condition=ready pod -l app=postgres -n banking-app --timeout=120s
 
 # Create backend related kubernetes resources
-kubectl apply -f k8s/backend-configmap.yaml
-kubectl apply -f k8s/backend-deployment.yaml
-kubectl apply -f k8s/backend-service.yaml
+kubectl apply -f k8s/06-backend-configmap.yaml
+kubectl apply -f k8s/07-backend-service.yaml
+kubectl apply -f k8s/08-backend-deployment.yaml
 kubectl wait --for=condition=ready pod -l app=backend -n banking-app --timeout=180s
 
 # Create frontend related kubernetes resources
-kubectl apply -f k8s/frontend-configmap.yaml
-kubectl apply -f k8s/frontend-service.yaml
-kubectl apply -f k8s/frontend-deployment.yaml
+kubectl apply -f k8s/09-frontend-configmap.yaml
+kubectl apply -f k8s/10-frontend-service.yaml
+kubectl apply -f k8s/11-frontend-deployment.yaml
 kubectl wait --for=condition=ready pod -l app=backend -n banking-app --timeout=180s
 
 ```
 
 ### 5. Access the Application
 ```bash
-minikube service frontend -n banking-app
+http://<PUBLIC-IP>:<NODEPORT>
+
+http://<PUBLIC-IP>:30080
 ```
 
 ## Cleanup
