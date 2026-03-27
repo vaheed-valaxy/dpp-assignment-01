@@ -10,6 +10,20 @@ A multi-tier banking application deployed on Kubernetes (Minikube).
 | ⚙️ Backend       | **Java 17 + Spring Boot 3 + Spring Data JPA** | REST API & business logic layer            | `8080`  |
 | 🗄️ Database     | **PostgreSQL 15**                             | Relational database for persistent storage | `5432`  |
 
+## 🧰 Tech Stack
+
+<div align="center">
+
+|     🎯 Layer     | 🚀 Technology                                    | 📄 Description                             |      🔌 Port      |
+| :--------------: | ------------------------------------------------ | ------------------------------------------ | :---------------: |
+|  🎨 **Frontend** | <b>Node.js (Express + EJS)</b>                   | Server-side rendered UI with dynamic views | <code>3000</code> |
+|  ⚙️ **Backend**  | <b>Java 17 + Spring Boot 3 + Spring Data JPA</b> | REST APIs & business logic processing      | <code>8080</code> |
+| 🗄️ **Database** | <b>PostgreSQL 15</b>                             | Reliable relational database for storage   | <code>5432</code> |
+
+</div>
+
+---
+
 ## Architecture
 ```
 Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → PostgreSQL (ClusterIP :5432)
