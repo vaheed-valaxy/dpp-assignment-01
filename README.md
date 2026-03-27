@@ -21,9 +21,13 @@ Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → Postgre
 
 ## Quick Start
 
-### 1. Start Minikube
+### 1. Create the Kubernetes Cluster of your choice
 ```bash
-minikube start --driver=docker --cpus=2 --memory=4096
+- Minikube
+- Kubeadm
+- EKS
+- AKS
+- GKE
 ```
 
 ### 2. Build & Push Docker Images
