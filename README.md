@@ -98,5 +98,4 @@ minikube service frontend -n banking-app
 ## Cleanup
 ```bash
 kubectl delete namespace banking-app
-minikube stop
 ```
