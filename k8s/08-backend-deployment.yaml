@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: YOUR_USER/banking-backend:v1
+          image: YOUR_USERNAME/banking-backend:v1
           imagePullPolicy: Always
           ports:
             - containerPort: 8080
