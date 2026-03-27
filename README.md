@@ -1,4 +1,4 @@
-# Banking Application - DevOps Assignment 1
+# Banking Application - DevOps Assignment-01
 
 A multi-tier banking application deployed on Kubernetes (Minikube).
 
