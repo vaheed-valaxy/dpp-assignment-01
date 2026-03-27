@@ -11,6 +11,7 @@ A multi-tier banking application deployed on Kubernetes (Minikube).
 ## 🧰 Tech Stack
 
 <div align="center">
+  
 | Layer            | Technology 🚀                                 | Description 📄                             | Port 🔌 |
 | ---------------- | --------------------------------------------- | ------------------------------------------ | ------- |
 | 🎨 Frontend      | **Node.js (Express + EJS)**                   | Server-side rendered UI with dynamic views | `3000`  |
