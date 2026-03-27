@@ -32,11 +32,11 @@ Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → Postgre
 
 ## ☸️ K8S Architecture Diagram  
 ![Architecture](./images/k8s-architecture.png)   
----
+
 ## Prerequisites
 - Kubernetes Cluster
 - kubectl CLI
-- Docker Hub Account
+- Docker Hub Account  
 
 ## Quick Start
 
