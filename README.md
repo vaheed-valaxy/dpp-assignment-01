@@ -15,13 +15,10 @@ A multi-tier banking application deployed on Kubernetes (Minikube).
 Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → PostgreSQL (ClusterIP :5432)
 ```
 
-## 🏗️ Architecture Diagram
----
-![Architecture](./images/architecture.png)
+## 🏗️ Architecture Diagram  
+![Architecture](./images/architecture.png)  
 
 ## 🧭 Flow Explanation
----
-
 * 🌐 **Browser** → Accesses application via NodePort
 * 🎨 **Frontend (Node.js)** → Handles UI & sends API requests
 * ⚙️ **Backend (Spring Boot)** → Processes business logic
