@@ -15,32 +15,8 @@ A multi-tier banking application deployed on Kubernetes (Minikube).
 Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → PostgreSQL (ClusterIP :5432)
 ```
 ## 🌈 Architecture Diagram
-
-```mermaid
-flowchart LR
-    %% User
-    A["🌐 Browser"]
-
-    %% Frontend
-    B["🎨 Frontend\n(Node.js)\nNodePort :30080"]
-
-    %% Backend
-    C["⚙️ Backend\n(Spring Boot)\nClusterIP :8080"]
-
-    %% Database
-    D["🗄️ PostgreSQL\nClusterIP :5432"]
-
-    %% Flow
-    A --> B --> C --> D
-
-    %% Styling
-    style A fill:#FFDEE9,stroke:#333,stroke-width:2px,color:#000
-    style B fill:#C1FBA4,stroke:#2E7D32,stroke-width:2px,color:#000
-    style C fill:#A0C4FF,stroke:#1E88E5,stroke-width:2px,color:#000
-    style D fill:#FFD6A5,stroke:#EF6C00,stroke-width:2px,color:#000
-```
-
 ---
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cefecbe1-2398-45f6-a5f7-eed01f789a49" />
 
 ## 🧭 Flow Explanation
 
@@ -50,13 +26,6 @@ flowchart LR
 * 🗄️ **PostgreSQL** → Stores and retrieves data
 
 ---
-<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cefecbe1-2398-45f6-a5f7-eed01f789a49" />
-
-
-
----
-
-
 ## Prerequisites
 - Kubernetes Cluster
 - kubectl CLI
