@@ -50,25 +50,8 @@ flowchart LR
 * 🗄️ **PostgreSQL** → Stores and retrieves data
 
 ---
-## 🏗️ Architecture Diagram
+<img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/cefecbe1-2398-45f6-a5f7-eed01f789a49" />
 
-```mermaid
-flowchart LR
-    Browser["🌐 Browser"]
-    Frontend["🎨 Frontend (NodePort :30080)"]
-    Backend["⚙️ Backend (ClusterIP :8080)"]
-    DB["🗄️ PostgreSQL (ClusterIP :5432)"]
-
-    Browser --> Frontend --> Backend --> DB
-
-    %% Clean styling
-    style Browser fill:#f5f5f5,stroke:#444
-    style Frontend fill:#e3f2fd,stroke:#1e88e5
-    style Backend fill:#e8f5e9,stroke:#43a047
-    style DB fill:#fff3e0,stroke:#fb8c00
-```
-
----
 
 
 ---
