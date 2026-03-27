@@ -1,6 +1,6 @@
 # Banking Application - DevOps Assignment-01
 
-A multi-tier Banking Application deployed on Kubernetes.
+A multi-tier Banking Application deployed on Kubernetes Cluster.
 
 ## 🧰 Tech Stack
 
