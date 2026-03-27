@@ -30,6 +30,8 @@ Browser → Frontend (NodePort :30080) → Backend (ClusterIP :8080) → Postgre
 * ⚙️ **Backend (Spring Boot)** → Processes business logic
 * 🗄️ **PostgreSQL** → Stores and retrieves data
 
+## 🏗️ K8S Architecture Diagram  
+![Architecture](./images/k8s-architecture.png)   
 ---
 ## Prerequisites
 - Kubernetes Cluster
