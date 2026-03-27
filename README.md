@@ -97,7 +97,7 @@ http://<PUBLIC-IP>:<NODEPORT>
 http://<PUBLIC-IP>:30080
 ```
 
-## Cleanup
+## 🧹 Clean Up
 ```bash
 kubectl delete namespace banking-app
 ```
